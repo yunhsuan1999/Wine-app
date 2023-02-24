@@ -74,6 +74,15 @@ const StyledHeadLineButtonContainer = styled.div`
     transform: scale(1.4, 1.4);
     opacity: 1;
   }
+
+  @media (max-width: 475px) { 
+    width: 25px;
+
+    &:hover {
+      transform: scale(1, 1);
+      opacity: .8;
+    }
+  }
 `;
 
 const StyledHeadLinePrevContainer = styled(StyledHeadLineButtonContainer)`
@@ -89,6 +98,10 @@ const StyledHeadLineNextContainer = styled(StyledHeadLineButtonContainer)`
 const StyledHeadLineButton = styled.img`
   height: 25px;
   width: 25px;
+
+  @media (max-width: 475px) { 
+    width: 10px;
+  }
 `;
 
 const StyledHeadLinePrev = styled(StyledHeadLineButton)``;

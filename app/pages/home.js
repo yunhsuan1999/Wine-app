@@ -12,6 +12,7 @@ const StyledHomePage = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 `;
 
 const StyledBackToTop = styled.div`
