@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Page</title>
+        <title>英勝國際 企業專用</title>
       </Head>
       <HomePage></HomePage>
     </>
