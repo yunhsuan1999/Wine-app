@@ -267,7 +267,7 @@ class Product extends Component {
 
 Product.getInitialProps = async ({ query }) => {
   const { id } = query;
-  const apiRes = await fetch(`http://localhost:3000/api/product/${id}`);
+  const apiRes = await fetch(`/api/product/${id}`);
   const { targetProduct } = await apiRes.json();
 
   return { targetProduct };
