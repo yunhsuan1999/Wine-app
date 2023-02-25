@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import data from '../../config/wineItems.js';
 import Footer from '../components/Footer';
 import Navbar from '../components/NavBar';
-import { checkEnvironment } from '../components/checkEnvironment.js';
+import { checkEnvironment } from '../checkEnvironment.js';
 
 const StyledProduct = styled.div`
   background-color: #ffffff;
