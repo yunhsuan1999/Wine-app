@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 const StyledHeadLine = styled.div`
   width: 100%;
   position: relative;
+  font-size: 0;
 `;
 
 const StyledHeadLineSliderContainer = styled.div`
@@ -56,6 +57,11 @@ const StyledHeadLineSliderDot = styled.div`
 
   &:hover {
     background-color: #ffffff;
+  }
+
+  @media (max-width: 475px) { 
+    width: 8px;
+    height: 8px;
   }
 `;
 
@@ -188,7 +194,7 @@ function HeadLine() {
             <StyledHeadLineImage src={items[items.length - 1].img} alt="" />
           </StyledHeadLineItems>
           {items.map(({ name, id, img }) => (
-            <StyledHeadLineItems onClick={() => handleClick(id)}>
+            <StyledHeadLineItems onClick={() => handleClick(id)} key={id}>
               <StyledHeadLineImage src={img} alt={name} />
             </StyledHeadLineItems>
           ))}
@@ -203,6 +209,7 @@ function HeadLine() {
           {items.map(({ name }, index) =>
             name ? (
               <StyledHeadLineSliderDot
+                key={index}
                 onClick={() => onClickDot(index)}
                 isActive={index === activeItem}
               />

@@ -7,12 +7,48 @@ import Navbar from './components/NavBar';
 
 const StyledHomePage = styled.div`
   background-color: #ffffff;
-  position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+`;
+
+const StyledHomeTab = styled.div`
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #870000;
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+  grid-column-gap: 70px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: NotoSansTC;
+  letter-spacing: 1px;
+
+  @media (max-width: 576px) {
+    grid-column-gap: 24px;
+    font-size: 14px;
+    min-height: 40px;
+  }
+`;
+
+const StyledHomeTabButton = styled.a`
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #d07f2d;
+  }
+
+  @media (max-width: 576px) {
+    &:hover {
+      color: #ffffff;
+    }
+  }
 `;
 
 const StyledBackToTop = styled.div`
@@ -35,7 +71,8 @@ class HomePage extends Component {
     super(props);
 
     this.state = {
-      visible: false
+      visible: false,
+      position: ''
     };
   }
   componentDidMount() {
@@ -67,17 +104,58 @@ class HomePage extends Component {
     }
   };
 
+  scrollTo = (position) => {
+    this.setState({ position: position });
+    let top =
+      document.getElementById(`${position}`).offsetTop -
+      document.getElementById('tab').offsetHeight -
+      10;
+
+    window.scrollTo({
+      top: top,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
   render() {
     const { visible } = this.state;
+    const tabText = [
+      {
+        button: '氣泡酒',
+        anchor: 'sparkling'
+      },
+      {
+        button: '葡萄酒',
+        anchor: 'wine'
+      },
+      {
+        button: '威士忌',
+        anchor: 'whiskey'
+      }
+    ];
     return (
       <>
-        <Navbar />
         <StyledHomePage>
+          <Navbar />
           <StyledBackToTop
             visible={visible}
             onClick={() => this.scrollToTop()}
           />
-          <HeadLine></HeadLine>
+          <HeadLine />
+          <StyledHomeTab id="tab">
+            {tabText.map((item) => (
+              <StyledHomeTabButton
+                onClick={() => {
+                  this.scrollTo(item.anchor);
+                }}
+                key={item.anchor}
+              >
+                {item.button}
+              </StyledHomeTabButton>
+            ))}
+          </StyledHomeTab>
+
           <Products></Products>
         </StyledHomePage>
         <Footer />

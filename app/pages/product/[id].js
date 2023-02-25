@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import data from '../../config/wineItems.js';
 import Footer from '../components/Footer';
 import Navbar from '../components/NavBar';
+import { checkEnvironment } from '../components/checkEnvironment.js';
 
 const StyledProduct = styled.div`
   background-color: #ffffff;
@@ -200,7 +201,7 @@ class Product extends Component {
               star,
               vivinoUrl
             }) => (
-              <StyledProductContainer>
+              <StyledProductContainer key={items}>
                 <StyledProductImage alt={img} src={img} />
                 <StyledProductRight>
                   <StyledProductName>{name}</StyledProductName>
@@ -267,7 +268,7 @@ class Product extends Component {
 
 Product.getInitialProps = async ({ query }) => {
   const { id } = query;
-  const apiRes = await fetch(`/api/product/${id}`);
+  const apiRes = await fetch(checkEnvironment().concat(`/api/product/${id}`));
   const { targetProduct } = await apiRes.json();
 
   return { targetProduct };

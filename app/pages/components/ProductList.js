@@ -1,4 +1,4 @@
-import data from '../../config/wine.js';
+import data from '../../config/wineList.js';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 
@@ -11,13 +11,66 @@ const StyledProductList = styled.div`
   margin-top: 20px;
 `;
 
-const StyledProductListText = styled.div`
-  font-size: 18px;
-  margin: 0 0 30px 20px;
-  font-weight: bolder;
+const StyledProductListContainer = styled.div`
+  padding: 0 20px;
 `;
 
-const StyledProductListContainer = styled.div`
+const StyledProductListTitle = styled.div`
+  font-weight: bolder;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #870000;
+
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+`;
+
+const StyledProductListText = styled.div`
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
+`;
+
+const StyledProductListContent= styled.div`
+  margin-top: 30px;
+`;
+
+const StyledProductListType = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  border: solid 3px;
+  border-color: #d07f2d;
+  width: fit-content;
+  padding: 2px 5px;
+`;
+
+const StyledProductListTypeImg = styled.img`
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+
+  @media (max-width: 576px) {
+    width: 25px;
+    height: 25px;
+  }
+`;
+
+const StyledProductListTypeTitle = styled.div`
+  font-size: 20px;
+  color: #d07f2d;
+  font-weight: 500;
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+  }
+`;
+
+const StyledProductItemsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px 30px;
@@ -99,6 +152,10 @@ const StyledProductListItemsStar = styled.div`
 const StyledProductListNoStarContainer = styled.div`
   height: 25.5px;
   margin-bottom: 6px;
+
+  @media (max-width: 576px) {
+    height: 0;
+  }
 `;
 
 const StyledProductListItemsName = styled.div`
@@ -123,28 +180,39 @@ function ProductList() {
 
   return (
     <StyledProductList>
-      <StyledProductListText>產品介紹 Products</StyledProductListText>
       <StyledProductListContainer>
-        {products.map(({ id, name, items, img, star }) => (
-          <StyledProductListItems onClick={() => handleClick(id)}>
-            <StyledProductListItemsImage className="image">
-              <img style={{ maxHeight: '260px' }} alt={img} src={img} />
-            </StyledProductListItemsImage>
-            {star ? (
-              <StyledProductListStarContainer>
-                <StyledProductListItemsStarImg
-                  className="star"
-                  alt="star-logo"
-                  src="../images/star.svg"
-                />
-                <StyledProductListItemsStar>{star}</StyledProductListItemsStar>
-              </StyledProductListStarContainer>
-            ) : (
-              <StyledProductListNoStarContainer />
-            )}
-            <StyledProductListItemsName>{name}</StyledProductListItemsName>
-            <StyledProductListItemsTexts>{items}</StyledProductListItemsTexts>
-          </StyledProductListItems>
+      <StyledProductListTitle>企業專案</StyledProductListTitle>
+      <StyledProductListText>產品介紹 Products</StyledProductListText>
+      { products.map((list) => (
+        <StyledProductListContent id={list.id} key={list.id}>
+          <StyledProductListType>
+            <StyledProductListTypeImg src={list.image} alt={list.type} />
+            <StyledProductListTypeTitle>{list.type}</StyledProductListTypeTitle>
+          </StyledProductListType>
+          <StyledProductItemsContainer>
+            {list.items.map(({ id, name, engName, img, star }) => (
+              <StyledProductListItems onClick={() => handleClick(id)} key={id}>
+                <StyledProductListItemsImage className="image">
+                  <img style={{ maxHeight: '260px' }} alt={img} src={img} />
+                </StyledProductListItemsImage>
+                {star ? (
+                  <StyledProductListStarContainer>
+                    <StyledProductListItemsStarImg
+                      className="star"
+                      alt="star-logo"
+                      src="../images/star.svg"
+                    />
+                    <StyledProductListItemsStar>{star}</StyledProductListItemsStar>
+                  </StyledProductListStarContainer>
+                ) : (
+                  <StyledProductListNoStarContainer />
+                )}
+                <StyledProductListItemsName>{name}</StyledProductListItemsName>
+                <StyledProductListItemsTexts>{engName}</StyledProductListItemsTexts>
+              </StyledProductListItems>
+              ))}
+        </StyledProductItemsContainer>
+        </StyledProductListContent>
         ))}
       </StyledProductListContainer>
     </StyledProductList>
