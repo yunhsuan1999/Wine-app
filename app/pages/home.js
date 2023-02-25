@@ -18,7 +18,7 @@ const StyledHomeTab = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #870000;
+  background-color: ${({visible}) => (visible ? '#ffffff' : '#870000')};
   position: sticky;
   top: -1px;
   z-index: 1000;
@@ -28,6 +28,10 @@ const StyledHomeTab = styled.div`
   font-family: NotoSansTC;
   letter-spacing: 1px;
 
+  @media (max-width: 1200px) {
+    background-color: #870000;
+  }
+
   @media (max-width: 576px) {
     grid-column-gap: 24px;
     font-size: 14px;
@@ -36,7 +40,7 @@ const StyledHomeTab = styled.div`
 `;
 
 const StyledHomeTabButton = styled.a`
-  color: #ffffff;
+  color: ${({visible}) => (visible ? '#870000' : '#ffffff')};
   text-decoration: none;
   cursor: pointer;
 
@@ -44,9 +48,13 @@ const StyledHomeTabButton = styled.a`
     color: #d07f2d;
   }
 
+  @media (max-width: 1200px) {
+    color: #ffffff;
+  }
+
   @media (max-width: 576px) {
     &:hover {
-      color: #ffffff;
+      color: #870000;
     }
   }
 `;
@@ -86,9 +94,9 @@ class HomePage extends Component {
   toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     const { visible } = this.state;
-    if (scrolled > 300) {
+    if (scrolled > 500) {
       this.setState({ visible: true });
-    } else if (scrolled <= 300) {
+    } else if (scrolled <= 500) {
       this.setState({ visible: false });
     }
 
@@ -143,9 +151,10 @@ class HomePage extends Component {
             onClick={() => this.scrollToTop()}
           />
           <HeadLine />
-          <StyledHomeTab id="tab">
+          <StyledHomeTab id="tab" visible={visible}>
             {tabText.map((item) => (
               <StyledHomeTabButton
+                visible={visible}
                 onClick={() => {
                   this.scrollTo(item.anchor);
                 }}
@@ -155,7 +164,6 @@ class HomePage extends Component {
               </StyledHomeTabButton>
             ))}
           </StyledHomeTab>
-
           <Products></Products>
         </StyledHomePage>
         <Footer />
