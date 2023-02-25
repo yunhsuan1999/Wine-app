@@ -54,7 +54,7 @@ const StyledHomeTabButton = styled.a`
 
   @media (max-width: 576px) {
     &:hover {
-      color: #870000;
+      color: #ffffff;
     }
   }
 `;
