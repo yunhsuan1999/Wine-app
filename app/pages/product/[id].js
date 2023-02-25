@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import data from '../../config/wineItems.js';
 import Footer from '../components/Footer';
 import Navbar from '../components/NavBar';
-import { checkEnvironment } from '../checkEnvironment.js';
+import { checkEnvironment } from '../components/checkEnvironment.js';
 
 const StyledProduct = styled.div`
   background-color: #ffffff;
@@ -267,8 +267,13 @@ class Product extends Component {
 }
 
 Product.getInitialProps = async ({ query }) => {
+  let base_url =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://wine-app-six.vercel.app"; 
+
   const { id } = query;
-  const apiRes = await fetch(checkEnvironment().concat(`/api/product/${id}`));
+  const apiRes = await fetch(base_url.concat(`/api/product/${id}`));
   const { targetProduct } = await apiRes.json();
 
   return { targetProduct };
