@@ -35,7 +35,6 @@ const StyledHomeTab = styled.div`
   @media (max-width: 576px) {
     grid-column-gap: 24px;
     font-size: 14px;
-    min-height: 40px;
   }
 `;
 
