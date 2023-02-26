@@ -58,8 +58,7 @@ const StyledHomeTabButton = styled.a`
   }
 `;
 
-const StyledBackToTop = styled.div`
-  background-image: url('./images/icon_back-to-top.svg');
+const StyledBackToTop = styled.img`
   height: 40px;
   width: 40px;
   border: none;
@@ -71,6 +70,13 @@ const StyledBackToTop = styled.div`
   transition: opacity 0.5s linear 0s;
   cursor: ${({ visible }) => (visible ? 'pointer' : '')};
   z-index: 100;
+
+  @media (max-width: 576px) {
+    height: 35px;
+    width: 35px;
+    right: 20px;
+    bottom: 20px;
+  }
 `;
 
 class HomePage extends Component {
@@ -146,6 +152,8 @@ class HomePage extends Component {
         <StyledHomePage>
           <Navbar />
           <StyledBackToTop
+            src='./images/icon_back-to-top.svg'
+            alt='top'
             visible={visible}
             onClick={() => this.scrollToTop()}
           />
