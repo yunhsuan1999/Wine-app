@@ -47,14 +47,6 @@ const data = () => {
             star: '3.8'
           },
           {
-            id: 'voga-merlot-terre-siciliane-i.g.t',
-            name: '沃加梅洛紅葡萄酒(西西里)',
-            engName: 'VOGA MERLOT TERRE SICILIANE I.G.T',
-            url: 'https://www.win-sense.com.tw/product-page/沃加梅洛紅葡萄酒-西西里-voga-merlot-terre-siciliane-i-g-t',
-            img: './images/voga-merlot-terre-siciliane-i.g.t.webp',
-            star: '3.4'
-          },
-          {
             id: 'prosecco-spumante-extra-dry-gemma-di-luna',
             name: '蒂芬妮月亮寶石微甜氣泡葡萄酒',
             engName: 'Prosecco Spumante Extra Dry Gemma di Luna',
@@ -69,6 +61,14 @@ const data = () => {
         id: 'wine',
         image: '../images/wine-icon.svg',
         items: [
+          {
+            id: 'voga-merlot-terre-siciliane-i.g.t',
+            name: '沃加梅洛紅葡萄酒(西西里)',
+            engName: 'VOGA MERLOT TERRE SICILIANE I.G.T',
+            url: 'https://www.win-sense.com.tw/product-page/沃加梅洛紅葡萄酒-西西里-voga-merlot-terre-siciliane-i-g-t',
+            img: './images/voga-merlot-terre-siciliane-i.g.t.webp',
+            star: '3.4'
+          },
           {
             id: 'shes-always-rose-pinot-nero',
             name: '玫瑰少女粉紅酒',
