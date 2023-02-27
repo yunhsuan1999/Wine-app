@@ -10,7 +10,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '4.1',
         vivinoUrl:
-          'https://www.vivino.com/gemma-di-luna-moscato/w/4937343#all_reviews',
+          'https://www.vivino.com/gemma-di-luna-moscato/w/4937343',
         description:
           'Gemma di Luna －「月亮寶石」，是意大利葡萄酒工藝的縮影。採用 Piemonte 的葡萄精製而成。桃子、橙花和油桃的甜味營造出一種有趣的多層次感。<br />擁有綿密細緻的氣泡口感，在任何場合都可以與朋友和家人分享。 適合作為開胃飲用的餐前酒，也可以做為甜點的餐後酒，在任何餐點前後都會激發迷人口感。',
         sipInfo:
@@ -44,7 +44,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.8',
         vivinoUrl:
-          'https://www.vivino.com/enoitalia-she-s-always-pinot-noir-rose/w/9721388#all_reviews',
+          'https://www.vivino.com/enoitalia-she-s-always-pinot-noir-rose/w/9721388',
         description:
           '甜美夢幻的瓶身設計。帶有水果及玫瑰花瓣的優雅香氣。<br />口感清新酸爽、細膩平衡。<br />冷藏過後，非常適合作為開胃酒。<br />搭配沙拉和魚類的開胃菜享用。',
         sipInfo:
@@ -96,7 +96,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.6',
         vivinoUrl:
-          'https://www.vivino.com/voga-pinot-grigio/w/1138162#all_reviews',
+          'https://www.vivino.com/voga-pinot-grigio/w/1138162',
         description:
           '灰皮諾是義大利北部生產且最流行的白葡萄酒。義大利的灰皮諾非常的清脆，但 VOGA ITALIA 使用誘人、溫和為特點的威尼茲產區葡萄，生產出我們認為最好的灰皮諾葡萄酒，飽滿成熟的蘋果和桃子的香氣及誘人的味道。',
         sipInfo:
@@ -112,7 +112,7 @@ const generateData = () => {
         img: '../images/voga-moscato-provincia-di-pavia.webp',
         price: 'NT $ 1,000',
         star: '4.0',
-        vivinoUrl: 'https://www.vivino.com/voga-moscato/w/1227842#all_reviews',
+        vivinoUrl: 'https://www.vivino.com/voga-moscato/w/1227842',
         description:
           '釀造真正的義大利麝香葡萄酒的關鍵是要捕捉到麝香葡萄天然水果的香氣和鮮明的味道。<br />葡萄必須迅速的壓榨，在發酵過程中保留二氧化碳，給予葡萄酒微氣泡的風格。<br />為保留葡萄的天然風味及口感，因此發酵時間很短。閉上雙眼，想像最新鮮的水果，那就是麝香葡萄帶給你的風味。',
         sipInfo:
@@ -129,7 +129,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.6',
         vivinoUrl:
-          'https://www.vivino.com/IT/it/voga-rosa/w/1242665#all_reviews',
+          'https://www.vivino.com/IT/it/voga-rosa/w/1242665',
         description:
           '粉紅葡萄酒引領最前端的時尚口味. VOGA ITALIA 的粉紅葡萄酒充滿驚喜。當打開粉紅葡萄酒時，就像在你面前有一整籃新鮮的綜合漿果，在嘴裡混合成多種莓果的風味。每嚐一口都會使你情不自禁的品飲下去。',
         sipInfo:
@@ -146,7 +146,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.8',
         vivinoUrl:
-          'https://www.vivino.com/IT/it/voga-sparkling-rose/w/5307374#all_reviews',
+          'https://www.vivino.com/IT/it/voga-sparkling-rose/w/5307374',
         description: '本身就很美味，適合搭配清淡的海鮮和軟奶酪。',
         sipInfo:
           '色澤：日落的色彩<br />香氣：未成熟杏桃和棉花糖的香氣<br />口感：酒體飽滿，果味濃郁，呈現出成熟的柳橙、苦橙、梨子和葡萄柚的味道，帶有氣泡和清爽的餘味。<br />品種：100% 灰皮諾<br />飲用溫度：6℃ - 10 ℃',
@@ -162,7 +162,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.4',
         vivinoUrl:
-          'https://www.vivino.com/AU/it/voga-merlot-sicily/w/1154247?year=2015#all_reviews',
+          'https://www.vivino.com/AU/it/voga-merlot-sicily/w/1154247?year=2015',
         description:
           '源自西西里島沁人心脾的紅葡萄酒，特有的風土使梅洛葡萄具有耐人尋味的魔力。能保持持久的味道，使每個人癡迷。',
         sipInfo:
@@ -179,7 +179,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '4.0',
         vivinoUrl:
-          'https://www.vivino.com/AU/it/gemma-di-luna-prosecco/w/6867859?ref=nav-search#all_reviews',
+          'https://www.vivino.com/AU/it/gemma-di-luna-prosecco/w/6867859?ref=nav-search',
         description:
           '月亮寶石以迷人的包裝推出風靡義大利的氣泡酒 Prosecco，此款氣泡酒帶有豐富香甜的氣味以及白花、檸檬皮及桃子的香氣、清新的乾果酒體以及鮮明的氣泡感，尾韻帶有水果凝乳、蜂蜜奶油以及礦物味。',
         sipInfo:
@@ -194,9 +194,9 @@ const generateData = () => {
         url: 'https://www.win-sense.com.tw/product-page/阿帕西門多紅葡萄酒',
         img: '../images/rosso-passito-salento-passopendium.webp',
         price: 'NT $ 1,000',
-        star: '3.8',
+        star: '3.7',
         vivinoUrl:
-          'https://www.vivino.com/HK/it/pirovano-costantino-collezione-salento-rosso-passito-lecce/w/6626161#all_reviews',
+          'https://www.vivino.com/US/it/enoitalia-antiche-viti-passo-pendium-appassimento/w/5887846',
         description:
           '百分之百風乾葡萄釀造法，遵循百年釀酒技術製造出醇熟紅酒，使用最優質的 Negroamaro 跟 Primitivo 兩種葡萄留在植物上，進行風乾熟成直至所有的味道及香氣被鎖在葡萄裡面。',
         sipInfo:
@@ -213,7 +213,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '4.1',
         vivinoUrl:
-          'https://www.vivino.com/HK/it/emporium-lecce-primitivo-di-manduria/w/7636401#all_reviews',
+          'https://www.vivino.com/HK/it/emporium-lecce-primitivo-di-manduria/w/7636401',
         description:
           '完美體現義大利普利亞大區的風土，有著深寶石紅的迷人顏色，覆盆莓以及藍莓香甜的氣味。<br />酒體飽滿，柔順的丹寧風味與酒精伴隨的美味，在平衡中展現紅酒的優雅，適合搭配烤肋排及陳年起司。',
         sipInfo:
@@ -230,14 +230,14 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.9',
         vivinoUrl:
-          'https://www.vivino.com/HK/it/aristocratico-lugana/w/8260640#all_reviews',
+          'https://www.vivino.com/HK/it/aristocratico-lugana/w/8260640',
         description:
           '帶有花香調及杏桃還有杏仁香氣的優雅白葡萄酒，持久完整的礦物感在口中散開。適合與醃肉、臘腸、新鮮起司搭配，也常被用來搭新鮮淡水魚類。',
         sipInfo:
           '容量：750ml<br />酒精濃度：13%<br />顏色：淡稻草黃色及些許綠色<br />香氣：細緻的杏桃及杏仁香氣<br />口感：富有礦物感<br />產地：義大利 Veneto',
         bartendInfo: '',
         extraInfo:
-          'DOC（Denominazione di Origine Controllatae ）: 法定產區酒，生產與製造過程經過嚴格規範，從葡萄的種類、酒精含量、生產方式以及品質上等類別均須要符合葡萄酒生產法嚴格規定'
+          'DOC（Denominazione di Origine Controllatae ）:<br />法定產區酒，生產與製造過程經過嚴格規範，從葡萄的種類、酒精含量、生產方式以及品質上等類別均須要符合葡萄酒生產法嚴格規定'
       },
       {
         id: 'appassimento-salento',
@@ -248,7 +248,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.9',
         vivinoUrl:
-          'https://www.vivino.com/HK/it/aristocratico-appassimento/w/3960464#all_reviews',
+          'https://www.vivino.com/HK/it/aristocratico-appassimento/w/3960464',
         description:
           '產區：Appassimento 來自意大利南部 Puglia 地區的 Salento 非凡土地，充滿歷史及豐富文化，由本土葡萄品種精心釀製而成。地中海溫暖的氣候，持續且充分的陽光和不時的徐徐海風，使 Salento 成為近乎完美的葡萄栽培環境。<br />酒體：Emporium Appassimento向地中海周邊國家廣泛使用的舊世紀工法致敬，使用百年來幾乎不變的製酒法與精選最好的葡萄，每顆葡萄會在採收期間會留在藤蔓上至延長期，等待被風乾濃縮其風味及香氣時才會被採收。',
         sipInfo:
@@ -265,7 +265,7 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '4.0',
         vivinoUrl:
-          'https://www.vivino.com/HK/it/lignum-lignum-vitis-frappato-shiraz/w/5826783#all_reviews',
+          'https://www.vivino.com/HK/it/lignum-lignum-vitis-frappato-shiraz/w/5826783',
         description:
           'LIGNUM VITIS 是一種因愛因斯坦引力波的科學發現而受到啟發的紅葡萄酒。這是第一個帶有刻畫了引力波圖形、木質且擁有複雜設計的酒標。<br /><br />LIGNUM VITIS 的名字暗示了在大桶中對酒進行陳年的過程，這是來自西西里葡萄品種 FRAPPATO，和希拉茲（Shiraz）的獨特風味的令人驚艷混合，這是其最好的特徵。<br /><br />濃郁的果味和結構感，並具有持久的巧克力味，其果香和橡木味之間有著出類拔萃的平衡。',
         sipInfo:
@@ -282,13 +282,30 @@ const generateData = () => {
         price: 'NT $ 1,000',
         star: '3.7',
         vivinoUrl:
-          'https://www.vivino.com/HK/it/vite-mia-rosso/w/3802882#all_reviews',
+          'https://www.vivino.com/HK/it/vite-mia-rosso/w/3802882',
         description:
           '這是一款結構化且持久的紅葡萄酒，帶有水果，香料和果醬的香氣。',
         sipInfo:
           '酒精濃度：13.5%<br />區域：義大利普利亞區<br />葡萄品種：涅米哥羅 PRIMITIVO（ZINFANDEL）<br />類型：紅葡萄酒<br />顏色：深寶石紅<br />香氣：紅莓與成熟櫻桃的風味<br />味道：平衡的甜味和酸度',
         bartendInfo: '',
         extraInfo: ''
+      },
+      {
+        id: 'aristocratico-amarone-della-valpolicella-docg',
+        name: '貴族阿瑪羅尼紅葡萄酒',
+        items: 'ARISTOCRATICO Amarone Della Valpolicella DOCG',
+        url: 'https://www.win-sense.com.tw/product-page/%E8%B2%B4%E6%97%8F%E9%98%BF%E7%91%AA%E7%BE%85%E5%B0%BC%E7%B4%85%E8%91%A1%E8%90%84%E9%85%92aristocratico-amarone-della-valpolicella-docg',
+        img: '../images/aristocratico-amarone-della-valpolicella-docg.webp',
+        price: 'NT $ 2,200',
+        star: '4.2',
+        vivinoUrl:
+          'https://www.vivino.com/HK/it/aristocratico-amarone-della-valpolicella/w/3372945',
+        description:
+          '使用最高品質的葡萄，分級為義大利最高等級的 DOCG，除生產數量會被限制外，葡萄需提早收成並風乾100天，剛採收的葡萄必須在竹果製成的架子上乾燥，直到剩下一半的重量並且達到規定比例的糖分。<br />乾燥過程結束後，葡萄會在一、二月時低溫碾碎並與葡萄皮進行發酵約兩個月，在經過兩年的陳釀後裝瓶成為這支貴族紅葡萄酒。',
+        sipInfo:
+          '容量：750ml<br />酒精濃度：15%<br />顏色：深寶石紅<br />香氣：櫻桃、黑醋栗、巧克力及香料香氣<br />口感：飽滿柔順，單寧風味與水果優雅平衡<br />產地：義大利 Verona and Lake Garda',
+        bartendInfo: '',
+        extraInfo: 'DOCG（Denominazione di Origine Controllatae Garantita）:<br />義大利葡萄酒的分級系統中最高的等級。從 DOC 及產區中挑選最佳品質的產區認證為 DOCG，並受到更為嚴格的葡萄酒生產法規範。'
       }
     ]
   };
