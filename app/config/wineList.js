@@ -62,6 +62,14 @@ const data = () => {
         image: '../images/wine-icon.svg',
         items: [
           {
+            id: 'aristocratico-amarone-della-valpolicella-docg',
+            name: '貴族阿瑪羅尼紅葡萄酒',
+            engName: 'ARISTOCRATICO Amarone Della Valpolicella DOCG',
+            url: 'https://www.win-sense.com.tw/product-page/%E8%B2%B4%E6%97%8F%E9%98%BF%E7%91%AA%E7%BE%85%E5%B0%BC%E7%B4%85%E8%91%A1%E8%90%84%E9%85%92aristocratico-amarone-della-valpolicella-docg',
+            img: './images/aristocratico-amarone-della-valpolicella-docg.webp',
+            star: '4.2'
+          },
+          {
             id: 'voga-merlot-terre-siciliane-i.g.t',
             name: '沃加梅洛紅葡萄酒(西西里)',
             engName: 'VOGA MERLOT TERRE SICILIANE I.G.T',
@@ -124,14 +132,6 @@ const data = () => {
             url: 'https://www.win-sense.com.tw/product-page/vite-mia維特米亞紅葡萄酒',
             img: './images/vite-mia.png',
             star: '3.7'
-          },
-          {
-            id: 'aristocratico-amarone-della-valpolicella-docg',
-            name: '貴族阿瑪羅尼紅葡萄酒',
-            engName: 'ARISTOCRATICO Amarone Della Valpolicella DOCG',
-            url: 'https://www.win-sense.com.tw/product-page/%E8%B2%B4%E6%97%8F%E9%98%BF%E7%91%AA%E7%BE%85%E5%B0%BC%E7%B4%85%E8%91%A1%E8%90%84%E9%85%92aristocratico-amarone-della-valpolicella-docg',
-            img: './images/aristocratico-amarone-della-valpolicella-docg.webp',
-            star: '4.2'
           }
         ]
       },
